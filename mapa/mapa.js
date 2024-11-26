@@ -8,7 +8,7 @@ const foreImg = new Image();//cria a constante da imagem
 foreImg.src= './mapa/foreground.png'//pega a imagem
 
 map.onload =() => {
-    ctx.drawImage(map,0,0);//desenha a imagem na tela 
+    ctx.drawImage(map,500,500);//desenha a imagem na tela 
 }
 
 const foreground = new Sprite({

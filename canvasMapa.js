@@ -13,8 +13,8 @@ for (let i = 0; i < colisao.length; i += 70) {
 
 const bordas = [];
 offset = {
-    x: -1280,
-    y: -600
+    x: 0,
+    y: 0
 };
 
 coliMap.forEach((row, i) => { // Cada linha sendo id I

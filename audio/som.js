@@ -1,3 +1,4 @@
+// música
 const musicaFundo = new Audio('./audio/audio.mp3');
 musicaFundo.loop = true;
 musicaFundo.volume = 1;

@@ -10,11 +10,14 @@
         <style>
             body{
                 margin: 0;
-                background-color: black;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;  /* coloca a tela centralizada no eixo de altura.*/
+                height: 100vh; 
+                background-image: url('./menu/escritorio.jpg'); /* Caminho correto da imagem */
+                background-size: cover; /* Faz a imagem cobrir toda a tela */
+                background-position: center; /* Centraliza a imagem */
+                background-repeat: no-repeat; /* Impede a repetição da imagem */
                 
             }
             canvas {
@@ -27,7 +30,20 @@
                 position: absolute;
                 z-index: 1; 
             }
-
+            #canvassprite{
+                position: absolute;
+                z-index: 2;
+                border: 6px solid ;
+                border-radius: 2rem;
+                border-color: black;
+            }
+            #canvasItens{
+                position: absolute;
+                z-index: 2;
+                border: 6px solid ;
+                border-radius: 2rem;
+                border-color: black;
+            }
             #gameMenuCanvas {
                 position:absolute;
                 z-index: 10;
@@ -36,22 +52,14 @@
         </style>
         
         <canvas id="mapa"></canvas>
-
+        <canvas id="canvassprite" width="1240" height="720"></canvas> 
+        <canvas id="canvasItens" width="1240" height="720"></canvas> 
         <canvas id="gameMenuCanvas" width="1240" height="720"></canvas>
 
-        <script src="./mapa/mapaColisao.js"></script>
-
-        <script src="class.js"></script>
-
-        <script src="canvasMapa.js"></script>
-
-        <script src="./personagem/animacao.js"></script>
-        
-        <script src="./personagem/movimentacao.js"></script>
-
-        <script src="./Menu/menu.js"></script> 
-
-        <script src="./audio/musicaFundo.js"></script> 
+        <script src="./audio/som.js"></script>
+        <script src="menu.js"></script>
+        <script src="vida.js"></script>
+        <script src="jogo.js"></script>
         
     </body>
 </html>
